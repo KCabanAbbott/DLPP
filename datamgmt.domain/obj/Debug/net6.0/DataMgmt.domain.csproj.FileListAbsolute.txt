@@ -1,0 +1,12 @@
+C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.domain\bin\Debug\net6.0\DataMgmt.domain.deps.json
+C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.domain\bin\Debug\net6.0\DataMgmt.domain.dll
+C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.domain\bin\Debug\net6.0\DataMgmt.domain.pdb
+C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.domain\obj\Debug\net6.0\DataMgmt.domain.csproj.AssemblyReference.cache
+C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.domain\obj\Debug\net6.0\DataMgmt.domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.domain\obj\Debug\net6.0\DataMgmt.domain.AssemblyInfoInputs.cache
+C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.domain\obj\Debug\net6.0\DataMgmt.domain.AssemblyInfo.cs
+C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.domain\obj\Debug\net6.0\DataMgmt.domain.csproj.CoreCompileInputs.cache
+C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.domain\obj\Debug\net6.0\DataMgmt.domain.dll
+C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.domain\obj\Debug\net6.0\refint\DataMgmt.domain.dll
+C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.domain\obj\Debug\net6.0\DataMgmt.domain.pdb
+C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.domain\obj\Debug\net6.0\ref\DataMgmt.domain.dll

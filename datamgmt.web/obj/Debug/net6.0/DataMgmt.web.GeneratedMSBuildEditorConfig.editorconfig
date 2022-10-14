@@ -1,0 +1,128 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DataMgmt.web
+build_property.RootNamespace = DataMgmt.web
+build_property.ProjectDir = C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.web\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\CABANKX\OneDrive - Abbott\Desktop\DLPP\datamgmt.web
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/Components/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/Components/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/Components/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/Components/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/Components/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/LocalFolderRemediation/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxGb2xkZXJSZW1lZGlhdGlvblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/LocalFolderRemediation/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxGb2xkZXJSZW1lZGlhdGlvblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/LocalFolderRemediation/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxGb2xkZXJSZW1lZGlhdGlvblxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/LocalFolderRemediation/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxGb2xkZXJSZW1lZGlhdGlvblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/LocalFolderRemediation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxGb2xkZXJSZW1lZGlhdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/USBException/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVVNCRXhjZXB0aW9uXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/USBException/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVVNCRXhjZXB0aW9uXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/USBException/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVVNCRXhjZXB0aW9uXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/USBException/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVVNCRXhjZXB0aW9uXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/USBException/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVVNCRXhjZXB0aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/UserAccounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjY291bnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/UserAccounts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjY291bnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/UserAccounts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjY291bnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/UserAccounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjY291bnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/UserAccounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjY291bnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CABANKX/OneDrive - Abbott/Desktop/DLPP/datamgmt.web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-g1yhpl7bmf

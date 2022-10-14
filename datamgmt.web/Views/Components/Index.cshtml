@@ -1,0 +1,66 @@
+﻿@model IEnumerable<datamgmt.domain.DataModels.Admin.ViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Component</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+       @using (Html.BeginForm()){    
+         <p> Title: @Html.TextBox("SearchString") </p>
+         <p> <input type="submit" value="Filter" /></p> 
+        } 
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <label class="control-label">Part Type</label>
+
+            </th>
+            <th>
+                <label class="control-label">Manufacturer</label>
+
+            </th>
+            <th>
+                <label class="control-label">Plant Site</label>
+            </th>
+            <th>
+                <label class="control-label">Part Classification</label>
+            </th>
+            <th>
+                <label class="control-label">Supplier</label>
+            </th>
+
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PartTypeVm._PartType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ManufacturerVm._Manufacturer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlantSiteVm.Site)
+            </td>            <td>
+                @Html.DisplayFor(modelItem => item.PartClassificationVm._PartClassification)
+            </td>            <td>
+                @Html.DisplayFor(modelItem => item.SupplierVm._Supplier)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.componentVm.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.componentVm.ID"> Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.componentVm.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

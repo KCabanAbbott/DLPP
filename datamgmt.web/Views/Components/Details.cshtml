@@ -1,0 +1,165 @@
+﻿@using datamgmt.domain.DataModels.Admin
+@model datamgmt.domain.DataModels.Admin.Components
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<h3>Component</h3>
+<hr />
+<div>
+    <input type="hidden" asp-for=ID />
+    <div class="col-md-12" @*style="height:200px; overflow-y: auto"*@> 
+        <table id="ExpTable" class="table table-sm">
+            <thead>
+            </thead>
+            <tbody>
+            </tbody>
+                <tr>
+                    <td style="font-weight:700" class="col-md-3">
+                        <label>Manufacturer</label>
+
+                    </td>
+                    <td class="col-md-3">
+                            @Html.DisplayFor(model => model.manufacturer._Manufacturer)
+                    </td>
+
+                    <td style="font-weight:700" class="col-md-3">
+                        <label>Part Classification</label>
+
+                    </td>
+                    <td class="col-md-3">
+                        @Html.DisplayFor(model => model.partClassification._PartClassification)
+                    </td>
+
+                    <td style="font-weight:700" class="col-md-3">
+                        <label>Part Type</label>
+
+                    </td>
+                    <td class="col-md-3">
+                        @Html.DisplayFor(model => model.partType._PartType)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="font-weight:700" class="col-md-3">
+                        <label>Plan tSite</label>
+
+                    </td>
+                    <td class="col-md-3">
+                            @Html.DisplayFor(model => model.plantSite.Site)
+                    </td>
+
+                    <td style="font-weight:700" class="col-md-3">
+                        <label>Supplier</label>
+
+                    </td>
+                    <td class="col-md-3">
+                        @Html.DisplayFor(model => model.supplier._Supplier)
+                    </td>
+
+                    <td style="font-weight:700" class="col-md-3">
+                        @Html.DisplayNameFor(model => model.DocumentDelivered)
+
+                    </td>
+                    <td class="col-md-3">
+                        @Html.DisplayFor(model => model.DocumentDelivered)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="font-weight:700" class="col-md-3">
+                        @Html.DisplayNameFor(model => model.LotNumber)
+
+                    </td>
+                    <td class="col-md-3">
+                            @Html.DisplayFor(model => model.LotNumber)
+                    </td>
+
+                    <td style="font-weight:700" class="col-md-3">
+                        @Html.DisplayNameFor(model => model.PartDelivered)
+
+                    </td>
+                    <td class="col-md-3">
+                        @Html.DisplayFor(model => model.PartDelivered)
+                    </td>
+
+                    <td style="font-weight:700" class="col-md-3">
+                        @Html.DisplayNameFor(model => model.PurchaserUserID)
+
+                    </td>
+                    <td class="col-md-3">
+                        @Html.DisplayFor(model => model.PurchaserUserID)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="font-weight:700" class="col-md-3">
+                        @Html.DisplayNameFor(model => model.PartNumber)
+
+                    </td>
+                    <td class="col-md-3">
+                            @Html.DisplayFor(model => model.PartNumber)
+                    </td>
+
+                    <td style="font-weight:700" class="col-md-3">
+                        @Html.DisplayNameFor(model => model.PartDescription)
+
+                    </td>
+                    <td class="col-md-3">
+                        @Html.DisplayFor(model => model.PartDescription)
+                    </td>
+
+                    <td style="font-weight:700" class="col-md-3">
+                        @Html.DisplayNameFor(model => model.UOM)
+
+                    </td>
+                    <td class="col-md-3">
+                        @Html.DisplayFor(model => model.UOM)
+                    </td>
+                </tr>
+
+
+        </table>
+    </div>
+    <div class="col-md-12 "> 
+        <table id="ExpTable" class="table table-sm">
+            <thead>
+                <tr>
+                    <th>
+                        Animal Part
+                    </th>
+                    <th>
+                        Animal Specie
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+      
+                @for(int i=0; i < Model.contentDetailList.Count; i++){
+                <tr>
+                    <td>
+                        @Html.DisplayFor(Model=>Model.contentDetailList[i].animalPart._AnimalPart)
+                    </td>
+                    <td>
+                        <input type="hidden" asp-for= "@Model.contentDetailList[i].IsDeleted"/>
+                        @Html.DisplayFor(model => model.contentDetailList[i].animalSpecies.Species)
+
+                    </td>
+
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>       
+    <form>
+
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

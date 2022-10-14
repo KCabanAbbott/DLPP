@@ -1,0 +1,176 @@
+﻿@using datamgmt.domain.DataModels.Admin
+@model datamgmt.domain.DataModels.Admin.Components
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Component</h4>
+<hr />
+<div class="row col-md-12">
+    <div>
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                @using (Html.BeginForm("Create", "Component", FormMethod.Post))
+                {
+                    <div class="col-md-12" @*style="height:200px; overflow-y: auto"*@> 
+                    <table id="ExpTable" class="table table-sm" style="background-color: lightGray">
+                        <thead>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <label style="font-weight:700">Plant Site</label>
+                                    <select asp-for="PlantSiteID" class = "form-control"
+                                    asp-items="@(new SelectList(ViewBag.PlantSiteList,"ID","Site"))">
+
+                                    </select> 
+                                </td>
+                                <td>
+                                    <label style="font-weight:700">Manufacturer</label>
+                                    <select asp-for="ManufacturerID" class = "form-control"
+                                    asp-items="@(new SelectList(ViewBag.ManufacturerList,"ID","_Manufacturer"))">
+
+                                    </select>
+                                </td>
+                                <td>
+                                    <label style="font-weight:700">Part Type</label>
+                                    <select asp-for="PartTypeID" class = "form-control"
+                                    asp-items="@(new SelectList(ViewBag.PartTypeList,"ID","_PartType"))">
+
+                                    </select>
+                                </td>
+                                <td>
+                                    <label style="font-weight:700">Supplier</label>
+                                    <select asp-for="SupplierID" class = "form-control"
+                                    asp-items="@(new SelectList(ViewBag.SupplierList,"ID","_Supplier"))">
+
+                                    </select>
+                                </td>
+                                <td>
+                                    <label style="font-weight:700">Part Classifications</label>
+                                    <select asp-for="PartClassificationID" class = "form-control"
+                                    asp-items="@(new SelectList(ViewBag.PartClassificationlist,"ID","_PartClassification"))">
+
+                                    </select>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <label style="font-weight:700" asp-for="DocumentDelivered" class="control-label"></label>
+                                        <input asp-for="DocumentDelivered" class="form-control" />
+                                        <span asp-validation-for="DocumentDelivered" class="text-danger"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <label style="font-weight:700" asp-for="LotNumber" class="control-label"></label>
+                                        <input asp-for="LotNumber" class="form-control" />
+                                        <span asp-validation-for="LotNumber" class="text-danger"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <label style="font-weight:700" asp-for="PartDelivered" class="control-label"></label>
+                                        <input asp-for="PartDelivered" class="form-control" />
+                                        <span asp-validation-for="PartDelivered" class="text-danger"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <label style="font-weight:700" asp-for="PurchaserUserID" class="control-label"></label>
+                                        <input asp-for="PurchaserUserID" class="form-control" />
+                                        <span asp-validation-for="PurchaserUserID" class="text-danger"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <label style="font-weight:700" asp-for="PartNumber" class="control-label"></label>
+                                        <input asp-for="PartNumber" class="form-control" />
+                                        <span asp-validation-for="PartNumber" class="text-danger"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <label style="font-weight:700" asp-for="PartDescription" class="control-label"></label>
+                                        <input asp-for="PartDescription" class="form-control" />
+                                        <span asp-validation-for="PartDescription" class="text-danger"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <label style="font-weight:700" asp-for="UOM" class="control-label"></label>
+                                        <input asp-for="UOM" class="form-control" />
+                                        <span asp-validation-for="UOM" class="text-danger"></span>
+                                    </div>
+                                </td>
+                            </tr>                    
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <div class="col-md-12" @*style="height:200px; overflow-y: auto"*@> 
+                    <table id="ExpTable" class="table table-sm" >
+                        <thead>
+                            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+                            <tr>
+                                <th>
+                                    Animal Part
+                                </th>
+                                <th>
+                                   Animal Specie
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+@*                            @foreach(AnimalContentDetail item in Model.contentDetailList){
+*@        
+                            @for(int i=0; i < Model.contentDetailList.Count; i++){
+                            <tr>
+                                <td>
+@*                                   <select asp-for="@item.AnimalPartID" class = "form-control" 
+                                    asp-items="@(new SelectList(ViewBag.AnimalPartList,"ID","_AnimalPart"))">
+                            
+                                    </select>*@
+                                    @Html.DropDownListFor(Model=>Model.contentDetailList[i].AnimalPartID,
+                                        new SelectList(ViewBag.AnimalPartList,"ID","_AnimalPart"),
+                                        new{@class = "form-control"})
+                                </td>
+                                <td>
+                                    <input type="hidden" asp-for= "@Model.contentDetailList[i].IsDeleted"/>
+                                    @Html.DropDownListFor(Model=>Model.contentDetailList[i].AnimalSpeciesID,
+                                        new SelectList(ViewBag.AnimalSpeciesList,"ID", "Species"),
+                                        new{@class = "form-control"})
+@*                                    <select asp-for="@item.AnimalSpeciesID"
+                                            class="form-control"
+                                            asp-items="@(new SelectList(ViewBag.AnimalSpeciesList,"ID", "Species"))">
+                                    </select>*@
+                                </td>
+                        <td>
+
+                        </td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" /> |
+                            <a asp-action="Index">Back to List</a>
+
+                    </div>
+                }
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
